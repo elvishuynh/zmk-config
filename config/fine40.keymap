@@ -16,9 +16,9 @@
 		default_layer {
 			bindings = <
 				&kp ESC	   &kp Q    &kp W    &kp F    &kp P &kp G     &kp J       &kp L     &kp U     &kp Y     &kp SEMI     &kp BACKSLASH
-				&kp BSPC &kp A    &kp R    &kp S    &kp T &kp D     &kp H       &kp N     &kp E     &kp I     &kp O  &kp RET
-				&kp LSHFT &kp Z    &kp X    &kp C    &kp V &kp B     &kp K       &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp TAB
-				&kp GRAVE &kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_COMMAND &mo 2 &kp SPACE &lt 1 SPACE &kp LEFT  &kp UP    &kp DOWN  &kp RIGHT &mo 3
+				&kp BSPC &kp A    &kp R    &kp S    &kp T &kp D     &kp H       &kp N     &kp E     &kp I     &kp O  &kp SQT
+				&kp LSHFT &kp Z    &kp X    &kp C    &kp V &kp B     &kp K       &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp RET
+				&kp TAB &kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_COMMAND &mo 2 &kp SPACE &lt 1 SPACE &kp LEFT  &kp UP    &kp DOWN  &kp RIGHT &mo 3
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
@@ -26,7 +26,7 @@
 
 		right {
 			bindings = <
-				&kp LS(GRAVE) &kp LS(N1) &kp LS(N2) &kp LS(N3) &kp LS(N4) &kp LS(N5) &kp LS(N6) &kp LS(N7) &kp LS(N8)    &kp LS(N9)   &kp LS(N0) &kp DEL
+				&kp GRAVE &kp LS(N1) &kp LS(N2) &kp LS(N3) &kp LS(N4) &kp LS(N5) &kp LS(N6) &kp LS(N7) &kp LS(N8)    &kp LS(N9)   &kp LS(N0) &kp DEL
 				&trans        &trans 	 &trans     &trans     &trans     &trans     &trans     &kp MINUS  &kp EQUAL     &kp LBKT     &kp RBKT   &trans
 				&trans        &trans     &trans     &trans     &trans     &trans     &trans     &trans     &kp LS(COMMA) &kp LS(DOT)  &trans     &trans
 				&trans        &trans     &trans     &trans     &trans     &trans     &trans     &kp C_MUTE &kp C_VOL_DN  &kp C_VOL_UP &kp C_PP   &trans
@@ -46,10 +46,10 @@
 
 		control {
 			bindings = <
-				&sys_reset &bootloader &bt BT_CLR &bt BT_PRV &bt BT_NXT &trans  &trans  &trans  &trans  &trans  &trans  &ext_power EP_ON
-				&trans     &kp F11     &kp F12    &kp F13    &kp F14    &kp F15 &kp F16 &kp F17 &kp F18 &kp F19 &kp F20 &trans
-				&trans     &kp F1      &kp F2     &kp F3     &kp F4     &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10 &trans
-				&studio_unlock     &trans      &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+				&sys_reset &bootloader &trans &trans &trans &trans  &trans  &trans  &trans  &trans  &trans  &ext_power EP_ON
+				&studio_unlock     &kp F11     &kp F12    &kp F13    &kp F14    &kp F15 &kp F16 &kp F17 &kp F18 &kp F19 &kp F20 &trans
+				&bt BT_CLR     &kp F1      &kp F2     &kp F3     &kp F4     &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10 &trans
+				&bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_PRV     &trans  &bt BT_NXT  &trans  &trans  &trans  &trans  &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
