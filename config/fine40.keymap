@@ -18,7 +18,7 @@
 				&kp ESC	   &kp Q    &kp W    &kp F    &kp P &kp G     &kp J       &kp L     &kp U     &kp Y     &kp SEMI     &kp BACKSLASH
 				&kp BSPC &kp A    &kp R    &kp S    &kp T &kp D     &kp H       &kp N     &kp E     &kp I     &kp O  &kp SQT
 				&kp LSHFT &kp Z    &kp X    &kp C    &kp V &kp B     &kp K       &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp RET
-				&kp TAB &kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_COMMAND &mo 2 &kp SPACE &lt 1 SPACE &kp LEFT  &kp UP    &kp DOWN  &kp RIGHT &mo 3
+				&kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_COMMAND &kp TAB &mo 2 &kp SPACE &lt 1 SPACE &kp LEFT  &kp UP    &kp DOWN  &kp RIGHT &mo 3
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
